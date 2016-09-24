@@ -224,6 +224,14 @@ public class Gps103ProtocolDecoder extends BaseProtocolDecoder {
             position.set(Position.KEY_IGNITION, true);
         } else if (alarm.equals("acc off")) {
             position.set(Position.KEY_IGNITION, false);
+        } else if (alarm.equals("door alarm")) {               /// add for open door alarm
+            position.set(Position.ALARM_DOOR, true);
+        } else if (alarm.equals("sensor alarm")) {             /// add for vibration alarm
+            position.set(Position.ALARM_VIBRATION, true);
+        } else if (alarm.equals("accident alarm")) {           /// add accident alarm
+            position.set(Position.ALARM_ACCIDENT, true);
+        } else if (alarm.equals("bonnet alarm")) {             /// bonnet alarm
+            position.set(Position.ALARM_BONNET, true); 
         }
 
         DateBuilder dateBuilder = new DateBuilder()
