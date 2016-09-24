@@ -72,6 +72,8 @@ public class Position extends Message {
     public static final String PREFIX_BUTTON = "button";
 
     public static final String ALARM_GENERAL = "general";
+    public static final String ALARM_DOOR = "doorAlarm";            /// add for open door alarm
+    public static final String ALARM_BONNET = "bonnetAlarm";        /// add for bonnet alarm
     public static final String ALARM_SOS = "sos";
     public static final String ALARM_VIBRATION = "vibration";
     public static final String ALARM_MOVEMENT = "movement";
